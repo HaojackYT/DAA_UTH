@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// Hàm hiển thị kết quả của một hoán vị
 void printAnswer(int N, int X[]) {
     for (int i = 0; i < N; i++) {
         cout << X[i];
@@ -9,15 +10,17 @@ void printAnswer(int N, int X[]) {
     cout << "\n";
 }
 
+// Hàm quay lui để sinh ra tất cả các hoán vị
 void permutation(int i, int N, int X[], bool used[], int tmp[]) {
-    // Duyet cac kha nang phan tu X[i] co the nhan duoc
+    // Duyệt các khả năng phần tử X[i] có thể nhận được
     for (int j = 0; j < N; j++) {
-        // Kiem tra co the gan X[i] = j hay khong?
-        // Kiem tra phan tu j da duoc su dung chua
-        if (!used[j]) {
-            // Danh dau phan tu j da duoc su dung
+        // Kiểm tra có thể gán X[i] = j hay không ?
+        // Kiểm tra phần tử thứ j đã được sử dụng chưa
+        if1  (!used[j]) {
+            // Đánh dấu phần tử thứ j đã được sử dụng
             used[j] = true;
             tmp[i] = X[j];
+            // Kiểm tra đã đủ N 
             if (i == N - 1) {
                 printAnswer(N, tmp);
             } else {
