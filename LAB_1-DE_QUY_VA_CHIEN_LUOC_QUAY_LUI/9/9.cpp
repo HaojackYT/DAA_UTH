@@ -36,7 +36,7 @@ void devideSubset(int i, int N, int X[], int used[], int sum1, int sum2) {
             sum2 += X[i];
         }
 
-        // Kiểm tra đã đủ N phần tử cho một hoán vị không
+        // Kiểm tra đã duyệt qua N phần tử của tập hợp chưa
         if (i == N - 1) {
             // Kiểm tra tổng của 2 tập con có bằng nhau không
             if (sum1 == sum2) {
