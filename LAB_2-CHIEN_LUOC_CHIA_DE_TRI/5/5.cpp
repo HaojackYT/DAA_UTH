@@ -4,8 +4,6 @@
 
 using namespace std;
 
-#define N_MAX 100
-
 // Hàm kiểm tra số nguyên tố
 bool isPrime(int n) {
     // Số nhỏ hơn hoặc bằng 1 không phải là số nguyên tố
@@ -63,7 +61,7 @@ int main() {
         return 0;
     }
 
-    int a[N_MAX]; // Mảng lưu giá trị các phần tử
+    int a[N]; // Mảng lưu giá trị các phần tử
     srand(time(NULL)); // Khởi tạo hạt giống (seed) cho hàm sinh số ngẫu nhiên
     // Gán giá trị các phần tử của mảng trong khoảng [-100, 100] ngẫu nhiên
     for (int i = 0; i < N; i++) {
