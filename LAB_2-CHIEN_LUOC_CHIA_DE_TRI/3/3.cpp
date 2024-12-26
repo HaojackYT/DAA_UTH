@@ -29,11 +29,11 @@ int findMinValDnC(int A[], int left, int right) {
 
 int main() {
     int n; // Biến lưu số lượng phần tử của mảng số nguyên A
-    cout << "Nhap vao so luong phan tu cua mang so nguyen A (>0): "; cin >> n;
+    cout << "Nhap vao so luong phan tu cua mang so nguyen A (> 0): "; cin >> n;
 
     // Kiểm tra giá trị đầu vào
     if (n <= 0) {
-        cout << "So luong phan tu cua mang so nguyen A phai (>0)\n";
+        cout << "So luong phan tu cua mang so nguyen A phai (> 0)\n";
     }
 
     int A[n]; // Khai báo mảng có độ dài 'n'

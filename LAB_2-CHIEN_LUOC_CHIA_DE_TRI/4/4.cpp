@@ -15,7 +15,7 @@ float calAveValDnC(int a[], int left, int right) {
     int middle = (left + right) / 2;
 
     // Biến 'aveLeft' lưu giá trị trung bình nửa bên trái của mảng,
-    // 'aveRight' lưu giá trị trung bình nửa bên phải của mảng
+    // 'aveRight' lưu giá trị trung bình của bên phải của mảng
     float aveLeft = calAveValDnC(a, left, middle);
     float aveRight = calAveValDnC(a, middle + 1, right);
 
@@ -30,11 +30,11 @@ float calAveValDnC(int a[], int left, int right) {
 
 int main() {
     int n; // Biến lưu số lượng phần tử của dãy số nguyên
-    cout << "Nhap vao so luong phan tu cua day so nguyen (>0): "; cin >> n;
+    cout << "Nhap vao so luong phan tu cua day so nguyen (> 0): "; cin >> n;
 
     // Kiểm tra giá trị đầu vào
     if (n <= 0) {
-        cout << "So luong phan tu cua day so nguyen phai (>0)\n";
+        cout << "So luong phan tu cua day so nguyen phai (> 0)\n";
         return 0;
     }
 
