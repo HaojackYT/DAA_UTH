@@ -61,7 +61,7 @@ int main() {
         return 0;
     }
 
-    int a[N]; // Mảng lưu giá trị các phần tử
+    int a[N]; // Khai báo mảng có độ dài 'N'
     srand(time(NULL)); // Khởi tạo hạt giống (seed) cho hàm sinh số ngẫu nhiên
     // Gán giá trị các phần tử của mảng trong khoảng [-100, 100] ngẫu nhiên
     for (int i = 0; i < N; i++) {
