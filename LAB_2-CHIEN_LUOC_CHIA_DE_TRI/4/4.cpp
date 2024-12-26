@@ -14,13 +14,13 @@ float calAveValDnC(int a[], int left, int right) {
     // Nửa bên phải (middle + 1, right) của mảng
     int middle = (left + right) / 2;
 
-    // Biến 'aveLeft' lưu giá trị trung bình của nửa bên trái của mảng,
-    // 'aveRight' lưu giá trị trung bình của nửa bên phải của mảng
+    // Biến 'aveLeft' lưu giá trị trung bình nửa bên trái của mảng,
+    // 'aveRight' lưu giá trị trung bình nửa bên phải của mảng
     float aveLeft = calAveValDnC(a, left, middle);
     float aveRight = calAveValDnC(a, middle + 1, right);
 
-    // Biến 'cntLeft' lưu số lượng phần tử của nửa bên trái của mảng,
-    // 'cntRight' lưu số lượng phần tử của nửa bên phải của mảng
+    // Biến 'cntLeft' lưu số lượng phần tử nửa bên trái của mảng,
+    // 'cntRight' lưu số lượng phần tử nửa bên phải của mảng
     int cntLeft = middle - left + 1;
     int cntRight = right - middle;
 
