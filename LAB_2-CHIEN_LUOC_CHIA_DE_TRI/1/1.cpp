@@ -51,7 +51,7 @@ void merge(int parent[], int left, int middle, int right) {
     }
 }
 
-// Hàm sắp xếp các phần tử của mảng bằng thuật toán Merge Sort
+// Hàm sắp xếp các phần tử của mảng tăng dần bằng thuật toán Merge Sort
 void mergeSort(int a[], int left, int right) {
     if (left >= right) return; // Điều kiện dừng của đệ quy
     int middle = (left + right) / 2; 
