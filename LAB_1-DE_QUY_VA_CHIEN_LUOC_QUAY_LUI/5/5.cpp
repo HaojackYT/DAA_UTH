@@ -26,11 +26,11 @@ void towerOfHanoi(int numberOfDisks, char source, char intermediate, char destin
 
 int main() {
     int numberOfDisks; // Biến lưu số lượng đĩa
-    cout << "Nhap vao so luong dia cua thap Ha Noi (>0): "; cin >> numberOfDisks;
+    cout << "Nhap vao so luong dia cua thap Ha Noi (> 0): "; cin >> numberOfDisks;
 
     // Kiểm tra giá trị đầu vào
     if (numberOfDisks <= 0) {
-        cout << "So luong dia cua thap Ha Noi phai (>0)\n";
+        cout << "So luong dia cua thap Ha Noi phai (> 0)\n";
         return 0;
     }
 

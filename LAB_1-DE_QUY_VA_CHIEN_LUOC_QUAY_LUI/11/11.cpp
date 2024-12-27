@@ -109,11 +109,11 @@ int main() {
     // 'numberOfOperators' lưu số lượng toán tử của biểu thức,
     // 'result' lưu kết quả yêu cầu của biểu thức
     int N, numberOfOperators, result;
-    cout << "Nhap vao so luong toan hang cua bieu thuc (>0): "; cin >> N;
+    cout << "Nhap vao so luong toan hang cua bieu thuc (> 0): "; cin >> N;
     
     // Kiểm tra giá trị đầu vào
     if (N <= 0) {
-        cout << "So luong toan hang cua bieu thuc phai (>0)\n";
+        cout << "So luong toan hang cua bieu thuc phai (> 0)\n";
         return 0;
     }
 
@@ -121,7 +121,7 @@ int main() {
     
     // Kiểm tra giá trị đầu vào
     if (numberOfOperators <= 0) {
-        cout << "So luong toan tu cua bieu thuc phai (>0)\n";
+        cout << "So luong toan tu cua bieu thuc phai (> 0)\n";
         return 0;
     }
 

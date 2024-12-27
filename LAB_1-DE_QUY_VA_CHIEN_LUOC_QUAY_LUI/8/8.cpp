@@ -32,11 +32,11 @@ void binaryString(int i, int N, int X[]) {
 
 int main() {
     int N; // Biến lưu độ dài của xâu nhị phân
-    cout << "Nhap vao do dai cua xau nhi phan (>0): "; cin >> N;
+    cout << "Nhap vao do dai cua xau nhi phan (> 0): "; cin >> N;
 
     // Kiểm tra giá trị đầu vào
     if (N <= 0) {
-        cout << "Do dai cua xau nhi phan phai (>0)\n";
+        cout << "Do dai cua xau nhi phan phai (> 0)\n";
         return 0;
     }
 

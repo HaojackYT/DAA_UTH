@@ -44,16 +44,16 @@ int main() {
     // Biến 'N' lưu số lượng phần tử của mảng
     // Và 'B' lưu giá trị tổng cần tìm của các tổ hợp
     int N, B;
-    cout << "Nhap vao so luong phan tu cua mang (>0): "; cin >> N;
-    cout << "Nhap vao gia tri tong can tim cua cac to hop (>0): "; cin >> B;
+    cout << "Nhap vao so luong phan tu cua mang (> 0): "; cin >> N;
+    cout << "Nhap vao gia tri tong can tim cua cac to hop (> 0): "; cin >> B;
 
     // Kiểm tra giá trị đầu vào
     if (N <= 0) {
-        cout << "So luong phan tu cua mang phai (>0)\n";
+        cout << "So luong phan tu cua mang phai (> 0)\n";
         return 0;
     }
     if (B <= 0) {
-        cout << "Gia tri tong can tim cua cac to hop (>0)\n";
+        cout << "Gia tri tong can tim cua cac to hop (> 0)\n";
         return 0;
     }
 

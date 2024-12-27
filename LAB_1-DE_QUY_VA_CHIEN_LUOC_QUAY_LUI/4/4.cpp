@@ -18,11 +18,11 @@ bool checkSymmetricRe(int a[], int n) {
 
 int main() {
     int n; // Biến lưu độ dài của mảng một chiều
-    cout << "Nhap vao so luong phan tu cua mang mot chieu (>0): "; cin >> n;
+    cout << "Nhap vao so luong phan tu cua mang mot chieu (> 0): "; cin >> n;
 
     // Kiểm tra giá trị đầu vào
     if (n <= 0) {
-        cout << "So luong phan tu cua mang mot chieu phai (>0)\n";
+        cout << "So luong phan tu cua mang mot chieu phai (> 0)\n";
         return 0;
     }
 

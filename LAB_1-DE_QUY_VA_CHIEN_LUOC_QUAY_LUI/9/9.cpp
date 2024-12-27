@@ -59,11 +59,11 @@ void devideSubset(int i, int N, int X[], int used[], int sum1, int sum2) {
 
 int main() {
     int N; // Biến lưu số lượng các phần tử của tập hợp
-    cout << "Nhap vao so luong cac phan tu cua tap hop (>0): "; cin >> N;
+    cout << "Nhap vao so luong cac phan tu cua tap hop (> 0): "; cin >> N;
     
     // Kiểm tra giá trị đầu vào
     if (N <= 0) {
-        cout << "So luong cac phan tu cua tap hop phai (>0)\n";
+        cout << "So luong cac phan tu cua tap hop phai (> 0)\n";
         return 0;
     }
     

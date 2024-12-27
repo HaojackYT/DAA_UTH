@@ -36,11 +36,11 @@ void permutation(int i, int N, int X[], bool used[], int tmp[]) {
 
 int main() {
     int N; // Biến lưu số lượng phần tử của tập hợp
-    cout << "Nhap vao so luong phan tu cua tap hop (>0): "; cin >> N;
+    cout << "Nhap vao so luong phan tu cua tap hop (> 0): "; cin >> N;
 
     // Kiểm tra giá trị đầu vào
     if (N <= 0) {
-        cout << "So luong phan tu cua tap hop phai (>0)\n";
+        cout << "So luong phan tu cua tap hop phai (> 0)\n";
         return 0;
     }
 
