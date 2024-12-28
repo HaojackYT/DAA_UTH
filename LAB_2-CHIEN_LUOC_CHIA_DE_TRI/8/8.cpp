@@ -30,7 +30,7 @@ int lomutoPartition(int a[], int left, int right) {
 }
 
 // Hàm tìm phần tử lớn thứ k trong một mảng ko sắp xếp sử dụng chiến thuật chia để trị
-int findKthLargest(int a[], int left, int right, int k) {
+int findKthLargestDnC(int a[], int left, int right, int k) {
     // TH cơ sở: nếu không hợp lệ
     if (left > right) return -1;
 
@@ -47,12 +47,12 @@ int findKthLargest(int a[], int left, int right, int k) {
     // TH2: số lượng phần tử bên phải lớn hơn k
     else if (cntRight > k) {
         // Gọi lại hàm tìm tiếp ở bên phải của mảng (pivotIndex + 1, right)
-        return findKthLargest(a, pivotIndex + 1, right, k);
+        return findKthLargestDnC(a, pivotIndex + 1, right, k);
     }
     // TH3: số lượng phần tử bên phải nhỏ hơn k
     else {
         // Gọi lại hàm tìm tiếp ở bên trái của mảng (left, pivotIndex - 1)
-        return findKthLargest(a, left, pivotIndex - 1, k - cntRight);
+        return findKthLargestDnC(a, left, pivotIndex - 1, k - cntRight);
     }
 }
 
@@ -82,7 +82,7 @@ int main() {
     }
 
     // Hàm tìm phần tử lớn thứ k trong một mảng ko sắp xếp
-    int result = findKthLargest(a, 0, n - 1, k);
+    int result = findKthLargestDnC(a, 0, n - 1, k);
 
     // Hiển thị kết quả
     cout << "Phan tu lon thu k (" << k << ") trong mang khong sap xep: "; cin >> result;
