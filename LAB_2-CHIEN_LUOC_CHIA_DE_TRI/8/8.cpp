@@ -85,6 +85,6 @@ int main() {
     int result = findKthLargestDnC(a, 0, n - 1, k);
 
     // Hiển thị kết quả
-    cout << "Phan tu lon thu k (" << k << ") trong mang khong sap xep: "; cin >> result;
+    cout << "Phan tu lon thu k (" << k << ") trong mang khong sap xep: " << result;
     return 0;
 }
