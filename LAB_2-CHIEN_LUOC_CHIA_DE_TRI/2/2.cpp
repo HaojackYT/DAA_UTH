@@ -2,6 +2,21 @@
 
 using namespace std;
 
+// Thuật toán Quick Sort là một thuật toán sắp xếp chia để trị (Divide and Conquer),
+// trong đó mảng được chia thành các phần nhỏ hơn dựa trên một phần tử làm pivot
+// và tiếp tục sắp xếp đệ quy các phần đó.
+// Ý tưởng của đoạn mã trên thực hiện thuật toán Quick Sort như sau:
+// 1. Phân hoạch mảng (Partition):
+// - Mục tiêu: Chia mảng thành hai phần sao cho:
+// + Phần bên trái: Chứa các phần tử nhỏ hơn hoặc bằng pivot.
+// + Phần bên phải: Chứa các phần tử lớn hơn pivot.
+// 2. Gọi đệ quy Quick Sort:
+// - Sau khi tìm được vị trí chính xác của pivot:
+// + Gọi hàm Quick Sort để sắp xếp nửa bên trái (từ left đến pivotIndex - 1).
+// + Gọi hàm Quick Sort để sắp xếp nửa bên phải (từ pivotIndex + 1 đến right).
+// 3. Điều kiện dừng:
+// - Nếu mảng con có 1 phần tử hoặc rỗng (tức left >= right), hàm kết thúc.
+
 // Hàm hoán đổi giá trị của 2 biến nguyên
 void swap(int &a, int &b) {
     int tmp = a;

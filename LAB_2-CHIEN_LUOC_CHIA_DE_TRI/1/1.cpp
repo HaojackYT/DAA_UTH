@@ -2,6 +2,17 @@
 
 using namespace std;
 
+// Merge Sort là một thuật toán sắp xếp chia để trị (Divide and Conquer).
+// Ý tưởng chính của thuật toán bao gồm:
+// 1. Chia nhỏ (Divide):
+// - Chia mảng cần sắp xếp thành hai nửa bằng nhau cho đến khi
+// mỗi phần chỉ còn 1 phần tử (hoặc không chia được nữa).
+// 2. Trị (Conquer):
+// - Sắp xếp từng nửa mảng nhỏ đã chia bằng cách kết hợp chúng lại
+// theo thứ tự tăng dần hoặc giảm dần.
+// 3. Kết hợp (Combine):
+// - Gộp hai nửa mảng đã được sắp xếp lại thành một mảng hoàn chỉnh, duy trì thứ tự.
+
 // Hàm gộp 2 mảng đã sắp xếp thành một mảng đã được sắp xếp
 void merge(int parent[], int left, int middle, int right) {
     // Biến 'nTmp' + 'i' lưu số lượng phần tử của mảng con thứ 'i' (i = 1,2)
