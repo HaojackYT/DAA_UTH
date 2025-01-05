@@ -53,11 +53,11 @@ int main() {
     // 'posLast' lưu vị trí của số nguyên tố cuối cùng,
     // 'valLast' lưu giá trị của số nguyên tố cuối cùng
     int N, posFirst = -1, valFirst, posLast = -1, valLast;
-    cout << "Nhap vao so luong phan tu cua day so (N > 0): "; cin >> N;
+    cout << "Nhap vao so luong phan tu cua day so (> 0): "; cin >> N;
 
     // Kiểm tra giá trị đầu vào
     if (N <= 0) {
-        cout << "So luong phan tu cua day so phai (N > 0)";
+        cout << "So luong phan tu cua day so phai (> 0)";
         return 0;
     }
 
