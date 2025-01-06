@@ -21,11 +21,11 @@ int max(int a, int b) {
 
 // Hàm tìm độ dài của dãy con tăng dài nhất (có thể liên tiếp hoặc 0)
 // sử dụng chiến lược quy hoạch động
-int longestIncreasingSubSequence(float a[], int n) {
+int longestIncreasingSubSequenceDP(float a[], int n) {
     // Mảng lưu độ dài dãy con có thể tạo được tại mỗi vị trí
     int L[n];
 
-    // TH cơ sở: dãy con chỉ chứa 1 phần tử (chính nó)
+    // TH cơ sở: Dãy con chỉ chứa 1 phần tử (chính nó)
     for (int i = 0; i < n; i++) {
         L[i] = 1;
     }
@@ -70,7 +70,7 @@ int main() {
     for (int i = 0; i < n; i++) cin >> a[i];
 
     // Gọi hàm tính độ dài của dãy con tăng dài nhất (có thể liên tiếp hoặc 0)
-    int result = longestIncreasingSubSequence(a, n);
+    int result = longestIncreasingSubSequenceDP(a, n);
 
     // Hiển thị kết quả
     cout << "Do dai cua day con tang dai nhat: "<< result;

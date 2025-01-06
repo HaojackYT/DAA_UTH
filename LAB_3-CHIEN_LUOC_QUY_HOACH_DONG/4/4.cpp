@@ -48,7 +48,7 @@ int longestCommonSubsequence3S(string s1, string s2, string s3) {
         for (int j = 0; j <= s2Len; j++) {
             // Duyệt các phần tử của chuỗi 3
             for (int k = 0; k <= s3Len; k++) {
-                // TH cơ sở: vị trí i, j và k == 0 không được dùng để lưu ký tự trong mảng 3 chiều
+                // TH cơ sở: vị trí i, j hoặc k == 0 không được dùng để lưu ký tự trong mảng 3 chiều
                 if (i == 0 || j == 0 || k == 0) {
                     F[i][j][k] = 0;
                 }
