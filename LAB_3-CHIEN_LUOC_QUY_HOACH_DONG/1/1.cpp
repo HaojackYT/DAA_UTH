@@ -67,7 +67,9 @@ int main() {
     float a[n]; // Khai báo mảng có độ dài 'n'
     // Nhập vào giá trị các phần tử của mảng
     cout << "Nhap vao gia tri cac phan tu cua mang (cach nhau boi ' '): ";
-    for (int i = 0; i < n; i++) cin >> a[i];
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
 
     // Gọi hàm tính độ dài của dãy con tăng dài nhất (có thể liên tiếp hoặc 0)
     int result = longestIncreasingSubSequenceDP(a, n);
