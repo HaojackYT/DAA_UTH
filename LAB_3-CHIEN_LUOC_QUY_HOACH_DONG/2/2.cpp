@@ -39,7 +39,7 @@ float maxSubSumNonAdjectDP(float A[], int N) {
     // Biến lưu tổng lớn nhất cuối cùng của mảng động
     int maxSum = dp[N - 1];
 
-    // Giải phóng bộ nhớ đã cấp phát động cho mảng
+    // Giải phóng bộ nhớ đã cấp phát cho mảng động
     delete[] dp;
 
     // Trả về tổng lớn nhất cuối cùng của mảng động
