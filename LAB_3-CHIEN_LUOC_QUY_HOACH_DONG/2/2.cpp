@@ -2,6 +2,15 @@
 
 using namespace std;
 
+/*
+5
+3 2 7 10 12
+*/
+
+/*
+22
+*/
+
 // Hàm tìm giá trị lớn nhất giữa hai số thực
 float max(float a, float b) {
     if (a > b) {
@@ -69,5 +78,9 @@ int main() {
 
     // Hiển thị kết quả
     cout << "Tong lon nhat cua day con trong mang: " << result;
+
+    // Giải phóng bộ nhớ đã cấp phát cho mảng động
+    delete[] A;
+
     return 0;
 }

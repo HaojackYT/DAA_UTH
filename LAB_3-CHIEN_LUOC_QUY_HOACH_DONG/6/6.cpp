@@ -33,7 +33,7 @@ int longestCommonSubsequence2S(string str1, string str2) {
     for (int i = 0; i <= str1Len; i++) {
         // Duyệt các phần tử của chuỗi 2
         for (int j = 0; j <= str2Len; j++) {
-            // TH cơ sở: vị trí i hoặc j == 0 không được dùng để lưu ký tự trong mảng 2 chiều
+            // TH cơ sở: Vị trí i hoặc j == 0 không được dùng để lưu ký tự trong mảng 2 chiều
             if (i == 0 || j == 0) {
                 F[i][j] = 0;
             }

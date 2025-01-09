@@ -27,34 +27,43 @@ int nAkDP(int N, int K) {
     // Duyệt qua các phần tử của mảng động 2 chiều
     for (int i = 1; i <= N; i++) {
         for (int j = 1; j <= K; j++) {
-            
+            // Kiểm tra số phần tử chọn và số phần tử
+            // Nếu số phần tử chọn (j) > số phần tử (i)
             if (j > i) {
+                // Kết quả giá trị chỉnh hợp = 0
                 dp[i][j] = 0;
             }
-            
+            // Nếu số phần tử chọn (j) <= số phần tử (i)
             else {
+                // Công thức truy hồi của chỉnh hợp:
+                // A(N, K) = A(N-1, K) + K * A(N-1, K-1)
                 dp[i][j] = dp[i - 1][j] + j * dp[i - 1][j - 1];
             }
         }
     }
 
+    // Biến lưu kết quả chỉnh hợp chập K của N
+    int nAk = dp[N][K];
 
-    int result = dp[N][K];
-
+    // Giải phóng bộ nhớ đã cấp phát cho mảng động 2 chiều
     for (int i = 0; i <= N; i++) {
         delete[] dp[i];
     }
     delete[] dp;
-    return result;
+
+    // Trả về kết quả chỉnh hợp chập K của N
+    return nAk;
 }
 
 int main() {
     int N, K;
-    cout << " "; cin >> N;
-    cout << " "; cin >> K;
+    cout << "Nhap vao tong so phan tu (N): "; cin >> N;
+    cout << "Nhap vao so phan tu duoc chon (K): "; cin >> K;
 
+    // Gọi hàm tính chỉnh hợp chập K của N
     int result = nAkDP(N, K);
 
-    cout << " " << result;
+    // Hiển thị kết quả
+    cout << "Chinh hop chap " << K << " cua " << " N: " << result;
     return 0;
 }
