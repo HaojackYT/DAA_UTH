@@ -18,7 +18,8 @@ int calMinCandyDifference(int a[], int n) {
         total += a[i];
     }
 
-    int half = total / 2; // Biến lưu một nửa số lượng kẹo của mảng
+    // Biến lưu một nửa số lượng kẹo của mảng
+    int half = total / 2;
 
     // Mảng lưu trạng thái các tổng có thể đạt được (0, half)
     // 'dp[j] = true' nếu tổng số lượng viên kẹo 'j' được tạo từ một số gói kẹo
@@ -73,9 +74,13 @@ int main() {
 
     // Khai báo mảng động có độ dài 'n'
     int *a = new int[n];
-    cout << "Nhap vao so luong vien keo trong moi goi tuong ung (cach nhau boi ' '): ";
+    cout << "Nhap vao so luong vien keo trong moi goi tuong ung (cach nhau boi ' ') (> 0): ";
     for (int i = 0; i < n; i++) {
         cin >> a[i];
+        if (a[i] <= 0) {
+            cout << "So luong vien keo trong moi goi tuong ung\n";
+            return 0;
+        }
     }
 
     // Gọi hàm tính số lượng kẹo chênh lệch ít nhất khi chia kẹo thành 2 phần
