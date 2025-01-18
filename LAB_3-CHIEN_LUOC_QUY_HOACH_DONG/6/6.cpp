@@ -68,4 +68,5 @@ int main() {
 
     // Hiển thị kết quả
     cout << "Do dai day con chung dai nhat cua 2 chuoi: " << result;
+    return 0;
 }

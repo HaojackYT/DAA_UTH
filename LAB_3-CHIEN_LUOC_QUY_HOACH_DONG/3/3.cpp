@@ -13,7 +13,7 @@ using namespace std;
 
 // Hàm tính chỉnh hợp chập K của N sử dụng chiến lược quy hoạch động
 int nAkDP(int N, int K) {
-    // Mảng động 2 chiều lưu để lưu kết quả của các chỉnh hợp
+    // Mảng động 2 chiều lưu kết quả của các chỉnh hợp
     int **dp = new int *[N + 1];
     for (int i = 0; i <= N; i++) {
         dp[i] = new int[K + 1]();
