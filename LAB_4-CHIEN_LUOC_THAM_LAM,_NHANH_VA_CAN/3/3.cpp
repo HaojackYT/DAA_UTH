@@ -37,7 +37,7 @@ int minDaysToBuyRiceGreedy(float A, int B, float C) {
         if (currentDayInWeek <= 5) {
             // Cập nhật tổng số lượng gạo đã mua dựa trên giá trị bé hơn giữa số lượng gạo
             // tối đa có thể mua trong 1 ngày và số lượng gạo còn lại cần phải mua
-            totalRiceBought = min(A, totalRiceNeeded - totalRiceBought);
+            totalRiceBought += min(A, totalRiceNeeded - totalRiceBought);
             numOfDaysNeeded++; // Tăng số lượng ngày cần phải mua gạo
         }
         currentDayInWeek++; // Chuyển sang ngày tiếp theo trong tuần
@@ -55,7 +55,7 @@ int minDaysToBuyRiceGreedy(float A, int B, float C) {
 
 int main() {
     // Biến 'A' lưu số lượng gạo tối đa có thể mua trong 1 ngày,
-    // 'B' lưu số lượng ngày gia đình cần gạo để dùng,
+    // 'B' lưu số lượng ngày gia đình cần dùng gạo,
     // 'C' lưu số lượng gạo mỗi ngày gia đình cần
     float A, C; int B;
     cout << "Nhap vao so luong gao toi da co the mua trong 1 ngay (> 0): "; cin >> A;
